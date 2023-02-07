@@ -1,0 +1,13 @@
+@import "./reset";
+@import "./variables";
+@import "./fonts";
+
+* {
+    box-sizing: border-box;
+    transition: all .05s ease-in;
+}
+body {
+    font-family: $main-font;
+    color: $color-black;
+    margin: 0 auto;
+}

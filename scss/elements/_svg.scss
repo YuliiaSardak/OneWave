@@ -1,0 +1,96 @@
+.header__logo-icon {
+    width: 36px;
+    height: 36px;
+}
+.footer {
+    &__epiphone-icon {
+        width: 100px;
+        height: 35px;
+    }
+    &__esp-icon {
+        width: 100px;
+        height: 43px;
+    }
+    &__gibson-icon {
+        width: 100px;
+        height: 64px;
+    }
+    &__engl-icon {
+        width: 100px;
+        height: 34px;
+    }
+
+    &__roland-icon {
+        width: 100px;
+        height: 15px;
+    }
+
+    &__fender-icon {
+        width: 100px;
+        height: 66px;
+    }
+    &__peavey-icon {
+        width: 100px;
+        height: 60px;
+        }
+    &__marshal-icon {
+        width: 100px;
+        height: 26px;
+    }
+    &__orange-icon {
+        width: 100px;
+        height: 29px;
+    }
+} 
+
+.footer__logo-image {
+    width: 150px;
+    height: 30px;
+}
+.footer__block-social {
+    &-instagram {
+        width: 30px;
+        height: 30px;
+
+        @media screen and (max-width:$tablet){
+            width: 20px;
+            height: 20px
+        }
+    }
+    &-facebook {
+        width: 15px;
+        height: 30px;
+        
+        @media screen and (max-width:$tablet){
+            width: 10px;
+            height: 20px;
+        }
+    }
+    &-pinterest {
+        width: 23px;
+        height: 30px;
+
+        @media screen and (max-width:$tablet){
+            width: 15px;
+            height: 20px;
+        }
+    }
+    &-twitter {
+        width: 36px;
+        height: 30px;
+
+        @media screen and (max-width:$tablet){
+            width: 24px;
+            height: 20px;
+        }
+    }
+    &-youtube {
+        width: 40px;
+        height: 30px;
+
+        @media screen and (max-width:$tablet){
+            width: 27px;
+            height: 20px;
+        }
+    }
+}

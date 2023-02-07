@@ -1,0 +1,162 @@
+.footer__block {
+    background-color: $color-brown-dark;
+    padding-top: 50px;
+
+    &-wrapper {
+        width: 1142px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        @media screen and (max-width:$tablet){
+            width: 768px;
+            justify-content: space-around;
+        }
+        @media screen and (max-width:$mobile){
+            width: 320px;
+            padding-top: 0;
+        }
+    }
+    &-logo {
+        margin-left: 5%;
+
+        @media screen and (max-width:$tablet){
+            margin: 0 0 20px 120px;
+        }
+        @media screen and (max-width:$mobile){
+            text-align: center;
+            
+        }
+    }
+    &-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 32px;
+        color: $color-brown-light;
+        margin-bottom: 51px;
+
+        @media screen and (max-width:$tablet){
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 12px;
+        }
+
+        @media screen and (max-width:$mobile){
+            margin-bottom: 25px;
+        }
+    }
+
+    &-social {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 32px;
+
+        @media screen and (max-width:$tablet){
+            gap: 20px;
+            margin-bottom: 12px;
+        }
+        @media screen and (max-width:$mobile){
+            margin-bottom: 25px;
+        }
+        &-link {
+            color: #F8F1EA; 
+    
+            &:hover {
+                color: #F16A50;
+            }
+        }
+    }
+    &-contacts {
+        @media screen and (max-width:$mobile){
+            margin: 40px 0 0 10px;
+        }
+    }
+    &-tel {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 32px;
+        color: $color-brown-light;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-tomato-light;
+        }
+
+        @media screen and (max-width:$tablet){
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+    }
+    &-copyright {
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $color-brown-light;
+        margin-top: 55px;
+        padding-bottom: 20px;
+
+        @media screen and (max-width:$tablet){
+            padding-bottom: 20px;
+            margin-top: 40px;
+        }
+        @media screen and (max-width:$mobile){
+            font-size: 12px;
+            line-height: 15px;
+            padding-bottom: 30px;
+            margin-top: 50px;
+        }
+    }
+    &-links  {
+        @media screen and (max-width:$tablet){
+            display: contents;
+        }
+        @media screen and (max-width:$mobile){
+            display: block;
+        }
+    }    
+}
+.footer__nav {
+    margin-top: 35px;
+    
+    @media screen and (max-width:$tablet){
+        margin-top: 0;
+    }
+
+    @media screen and (max-width:$mobile){
+        display: inline-block;
+        margin: 41px 0 0 10px;
+    }
+    &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 90px;
+    }
+    &-item {
+        cursor: pointer;
+
+        &:hover {
+            color: $color-tomato-light;
+        }
+    }
+    &-link {
+        color: $color-white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        cursor: pointer;
+
+        &:hover {
+            color: $color-tomato-light;
+        }
+        @media screen and (max-width:$tablet){
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}
+

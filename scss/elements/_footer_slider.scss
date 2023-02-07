@@ -1,0 +1,95 @@
+.footer__slider {
+    height: 290px;
+    background-color: $color-brown-light;
+    padding-bottom: 70px;
+
+    @media screen and (max-width:$tablet){
+        height: 228px;
+    }
+
+    &-title {
+        padding-top: 70px;
+
+        @media screen and (max-width:$tablet){
+            font-size: 20px;
+            line-height: 24px;
+        }
+        @media screen and (max-width:$mobile){
+            padding-top: 50px;
+        }
+    }
+    &-slider {
+        margin: 0 auto;
+        margin-top: 50px;
+        position: relative;
+        padding: 0 50px;
+        margin: 0 40px;
+
+        @media screen and (max-width:$tablet){
+            margin: 0 4px;
+            padding: 0;
+        }
+    }
+}
+.footer__slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url('../image/prev.svg');
+
+    @media screen and (max-width:$tablet){
+        background: url('../image/prev_tablet.svg');
+        background-repeat: no-repeat;
+    }
+ }
+.footer__slider .slick-arrow.slick-next {
+    right: 0;
+    background: url('../image/next.svg');
+
+    @media screen and (max-width:$tablet){
+        background: url('../image/next_tablet.svg');
+        background-repeat: no-repeat;
+    }
+ }
+
+ .footer__slider .slick-arrow {
+    position: absolute;
+    top: 5%;
+    margin: -10px 0 0 0;
+    z-index: 10;
+    font-size: 0;
+    width: 40px;
+    height: 72px;
+    border: none;
+
+    @media screen and (max-width:$tablet){
+        width: 16px;
+        margin: 11px 0 0 0;
+      }
+ }
+ .footer__slider .slick-track {
+    display: flex;
+    align-items: center;
+   
+    @media screen and (max-width:$tablet){
+      gap: 24px;
+    }
+ }
+ .footer__slider .slick-dots {
+    @media screen and (max-width:$mobile){
+        bottom: 5px;
+    }
+
+    & button {
+    @media screen and (max-width:$mobile){
+        font-size: 0;
+        background: $color-dark-dot-inactive;
+        border: none;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        outline: none;
+        bottom: -30px;    }
+    }
+}
+.footer__slider .slick-dots li.slick-active button {
+    background-color: $color-tomato-light;
+}

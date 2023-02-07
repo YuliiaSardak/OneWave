@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>Slider</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="#">
+                <svg class="header__logo-image">
+                    <use xlink:href="./sprites/sprites.svg#logo"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Home</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Catalog</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">News</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Contacts</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__icons">
+            <a href="#">
+                <svg class="header__logo-icon">
+                    <use xlink:href="./sprites/sprites.svg#search-icon"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="header__logo-icon">
+                    <use xlink:href="./sprites/sprites.svg#profile-icon"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#">Home</a></li>
+              <li><a class="menu__item" href="#">Catalog</a></li>
+              <li><a class="menu__item" href="#">News</a></li>
+              <li><a class="menu__item" href="#">Contacts</a></li>
+            </ul>
+          </div>
+    </header>
+    <div class="main-section">
+        <div class="header__slider slider">
+            <div class="header__slider-slide discover">
+                <h1 class="header__slider-title">DISCOVER NEW OPTIONS</h1>
+                <div class="slider-button ">
+                    <a class="slider-button-link" href="#">VIEW MORE</a>
+                </div>
+            </div>
+            <div class="header__slider-slide expand">
+                <h1 class="header__slider-title">EXPAND YOUR HORIZONS</h1>
+                <div class="slider-button">
+                    <a class="slider-button-link" href="#">VIEW MORE</a>
+                </div>
+            </div>
+            <div class="header__slider-slide find">
+                <h1 class="header__slider-title">FIND YOUR OWN STYLE</h1>
+                <div class="slider-button">
+                    <a class="slider-button-link" href="#">VIEW MORE</a>
+                </div>
+            </div>
+        </div>
+        <h1 class="main__slider-title title">NEW ARRIVALS</h1>
+        <div class="main__slider main-slider">
+            <div class="main__slider-slide">
+                <div class="main__slider-slide wrapper">
+                    <div class="main__slider-status">
+                        <p class="change">IN STOCK</p>
+                    </div>
+                    <img class="main__slider-image" src="./image/guitar_red.png" alt="Hagstrom">
+                    <p class="main__slider-discription">Hagstrom Alvar Limited Edition</p>
+                    <p class="main__slider-price">€2.990,00</p>
+                </div>
+            </div>
+            <div class="main__slider-slide">
+                <div class="main__slider-slide wrapper">
+                    <div class="main__slider-status">
+                        <p class="change">IN STOCK</p>
+                    </div>
+                    <img class="main__slider-image" src="./image/guitar_blue.png" alt="Hagstrom">
+                    <p class="main__slider-discription">Hagstrom Tremar Viking Deluxe Cloudy Seas</p>
+                    <p class="main__slider-price">€1.300,00</p>
+                </div>
+            </div>
+            <div class="main__slider-slide">
+                <div class="main__slider-slide wrapper" onclick="changeText(this)">
+                    <div class="main__slider-status"  >
+                        <p class="change">IN STOCK</p>
+                    </div>
+                    <img class="main__slider-image" src="./image/guitar_orange.png" alt="Hagstrom">
+                    <p class="main__slider-discription">Gibson Les Paul Standard 60s</p>
+                    <p class="main__slider-price">€3.749,00</p>
+                </div>
+            </div>
+            <div class="main__slider-slide">
+                <div class="main__slider-slide wrapper">
+                    <div class="main__slider-status">
+                        <p class="change">IN STOCK</p>
+                    </div>
+                    <img class="main__slider-image" src="./image/guitar_brown.png" alt="Hagstrom">
+                    <p class="main__slider-discription">Suhr Standard Plus Trans Blue Denim</p>
+                    <p class="main__slider-price">€3.449,00</p>
+                </div>
+            </div>
+            <div class="main__slider-slide">
+                <div class="main__slider-slide wrapper">
+                    <div class="main__slider-status">
+                        <p class="change">IN STOCK</p>
+                    </div>
+                    <img class="main__slider-image" src="./image/guitar_black.png" alt="Hagstrom">
+                    <p class="main__slider-discription">Fender Telecaster Black Paisley Limited Edition</p>
+                    <p class="main__slider-price">€1.499,00</p>
+                </div>
+            </div>
+            <div class="main__slider-slide">
+                <div class="main__slider-slide wrapper">
+                    <div class="main__slider-status">
+                        <p class="change">IN STOCK</p>
+                    </div>
+                    <img class="main__slider-image" src="./image/guitar_red.png" alt="Hagstrom">
+                    <p class="main__slider-discription">Hagstrom Alvar Limited Edition</p>
+                    <p class="main__slider-price">€2.990,00</p>
+                </div>
+            </div>
+            <div class="main__slider-slide">
+                <div class="main__slider-slide wrapper">
+                    <div class="main__slider-status">
+                        <p class="change">IN STOCK</p>
+                    </div>
+                    <img class="main__slider-image" src="./image/guitar_orange.png" alt="Hagstrom">
+                    <p class="main__slider-discription">Gibson Les Paul Standard 60s</p>
+                    <p class="main__slider-price">€3.749,00</p>
+                </div>
+            </div>
+            <div class="main__slider-slide">
+                <div class="main__slider-slide wrapper">
+                    <div class="main__slider-status">
+                        <p class="change">IN STOCK</p>
+                    </div>
+                    <img class="main__slider-image" src="./image/guitar_brown.png" alt="Hagstrom">
+                    <p class="main__slider-discription">Suhr Standard Plus Trans Blue Denim</p>
+                    <p class="main__slider-price">€3.449,00</p>
+                </div>
+            </div>
+        </div>
+            <div class="slider-button main">
+                <a class="slider-button-link link-main" href="#">VIEW MORE</a>
+            </div>
+            <div class="footer__slider">
+                <h1 class="footer__slider-title title">OUR PARTNERS</h1>
+            <div class="footer__slider-slider">
+                <div class="footer__slider-slide">
+                    <a href="#">
+                        <svg class="footer__orange-icon">
+                            <use xlink:href="./sprites/sprites.svg#orange"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__slider-slide">
+                    <a href="#">
+                        <svg class="footer__epiphone-icon">
+                            <use xlink:href="./sprites/sprites.svg#epiphone"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__slider-slide">
+                    <a href="#">
+                        <svg class="footer__esp-icon">
+                            <use xlink:href="./sprites/sprites.svg#esp"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__slider-slide">
+                    <a href="#">
+                        <svg class="footer__gibson-icon">
+                            <use xlink:href="./sprites/sprites.svg#gibson"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__slider-slide">
+                    <a href="#">
+                        <svg class="footer__engl-icon">
+                            <use xlink:href="./sprites/sprites.svg#engl"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__slider-slide">
+                    <a href="#">
+                        <svg class="footer__roland-icon">
+                            <use xlink:href="./sprites/sprites.svg#roland"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__slider-slide">
+                    <a href="#">
+                        <svg class="footer__fender-icon">
+                            <use xlink:href="./sprites/sprites.svg#fender"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__slider-slide">
+                    <a href="#">
+                        <svg class="footer__peavey-icon">
+                            <use xlink:href="./sprites/sprites.svg#peavey"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__slider-slide">
+                    <a href="#">
+                        <svg class="footer__marshal-icon">
+                            <use xlink:href="./sprites/sprites.svg#marshal"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__slider-slide">
+                    <a href="#">
+                        <svg class="footer__orange-icon">
+                            <use xlink:href="./sprites/sprites.svg#orange"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__slider-slide">
+                    <a href="#">
+                        <svg class="footer__gibson-icon">
+                            <use xlink:href="./sprites/sprites.svg#gibson"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+           
+            </div>
+            <div class="footer__block">
+                <div class="footer__block-logo">
+                    <a href="#">
+                        <svg class="footer__logo-image">
+                            <use xlink:href="./sprites/sprites.svg#logo-white"></use>
+                        </svg>
+                    </a> 
+                </div>
+                <div class="footer__block-wrapper">
+
+                    <div class="footer__block-links">
+
+                        <div class="footer__nav">
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item">
+                                    <a class="footer__nav-link" href="#">Home</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a class="footer__nav-link" href="#">Catalog</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a class="footer__nav-link" href="#">News</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a class="footer__nav-link" href="#">Contacts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__block-contacts">
+                        <p class="footer__block-title">Contact Us</p>
+                        <div class="footer__block-social">
+                            <a class="footer__block-social-link" href="#">
+                                <svg class="footer__block-social-instagram icon">
+                                    <use xlink:href="./sprites/sprites.svg#instagram"></use>
+                                </svg>
+                            </a>
+                            <a class="footer__block-social-link" href="#">
+                                <svg class="footer__block-social-facebook icon">
+                                    <use xlink:href="./sprites/sprites.svg#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="footer__block-social-link" href="#">
+                                <svg class="footer__block-social-pinterest icon">
+                                    <use xlink:href="./sprites/sprites.svg#pinterest"></use>
+                                </svg>
+                            </a>
+                            <a class="footer__block-social-link" href="#">
+                                <svg class="footer__block-social-twitter  icon">
+                                    <use xlink:href="./sprites/sprites.svg#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="footer__block-social-link" href="#">
+                                <svg class="footer__block-social-youtube icon">
+                                    <use xlink:href="./sprites/sprites.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <a class="footer__block-tel" href="tel:0800 300 4040">0800 300 4040</a>
+                    </div>
+                </div>
+                <p class="footer__block-copyright">© Copyright 2022. All rights reserved.</p>
+            </div>
+        </div>
+
+    </div>
+    
+
+      <script src="./js/plagins/jquery-3.6.3.min.js"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./js/main.js"></script>
+    
+
+</body>
+</html>
