@@ -3,7 +3,10 @@
 @import "./fonts";
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: all .05s ease-in;
+    -o-transition: all .05s ease-in;
     transition: all .05s ease-in;
 }
 body {
