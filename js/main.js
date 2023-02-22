@@ -11,23 +11,23 @@ mainSlider.slick({
   dots:false,
   infinite: false,
   arrows: true,
-  variableWidth: true,
-  adaptiveHeight: true,
   slidesToShow: 5,
   responsive: [
     {
-      breakpoint: 769,
+      breakpoint: 1025,
       settings: {
         slidesToShow: 3,
-      },
-      breakpoint:321,
+      }
+    },
+    {
+      breakpoint:427,
       settings: {
         slidesToShow: 1,
         arrows: false,
         dots: true,
       }
     }]
-}) 
+}) ;
 
 let footerSlider = $('.footer__slider-slider');
 footerSlider.slick({
@@ -37,16 +37,18 @@ footerSlider.slick({
   slidesToShow: 9,
   responsive: [
     {
-      breakpoint: 769,
-      settings: {
+      breakpoint: 1025,
+        settings: {
         slidesToShow: 6,
-      },
-    breakpoint:321,
-    settings: {
-      slidesToShow: 2,
-      arrows: false,
-      dots: true,
-    }
+      }
+    },
+    {
+      breakpoint:427,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true,
+        }
     }]
 });
   

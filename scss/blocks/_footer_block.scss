@@ -3,17 +3,15 @@
     padding-top: 50px;
 
     &-wrapper {
-        width: 1142px;
         display: flex;
         margin: 0 auto;
         justify-content: space-between;
+        margin: 0 25px;
 
         @media screen and (max-width:$tablet){
-            width: 768px;
             justify-content: space-around;
         }
         @media screen and (max-width:$mobile){
-            width: 320px;
             padding-top: 0;
         }
     }
@@ -24,8 +22,8 @@
             margin: 0 0 20px 120px;
         }
         @media screen and (max-width:$mobile){
-            text-align: center;
-            
+            margin: 0 auto;
+            text-align: center;  
         }
     }
     &-title {
